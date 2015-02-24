@@ -5,14 +5,43 @@
   <artifactId>spring-mvc-training-app</artifactId>
   <packaging>war</packaging>
   <version>0.0.1-SNAPSHOT</version>
-  <name>spring-mvc-training-app Maven Webapp</name>
-  <url>http://maven.apache.org</url>
+  <name>spring-mvc-training-app</name>
+<!--   <url>http://maven.apache.org</url> -->
+  <properties>
+  	<org.springframework.version>4.0.3.RELEASE</org.springframework.version>
+  </properties>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>3.8.1</version>
+      <version>4.11</version>
       <scope>test</scope>
+    </dependency>
+    <dependency>
+    	<groupId>org.springframework</groupId>
+    	<artifactId>spring-core</artifactId>
+    	<version>${org.springframework.version}</version>
+    </dependency>
+    <dependency>
+    	<groupId>org.springframework</groupId>
+    	<artifactId>spring-webmvc</artifactId>
+    	<version>${org.springframework.version}</version>
+    </dependency>
+    <dependency>
+    	<groupId>javax.servlet</groupId>
+    	<artifactId>servlet-api</artifactId>
+    	<version>2.5</version>
+    	<scope>provided</scope>
+    </dependency>
+    <dependency>
+    	<groupId>jstl</groupId>
+    	<artifactId>jstl</artifactId>
+    	<version>1.2</version>
+    </dependency>
+    <dependency>
+    	<groupId>taglibs</groupId>
+    	<artifactId>standard</artifactId>
+    	<version>1.1.2</version>
     </dependency>
   </dependencies>
   <build>
