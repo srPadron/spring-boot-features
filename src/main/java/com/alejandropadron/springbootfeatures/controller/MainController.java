@@ -1,4 +1,5 @@
 package com.alejandropadron.springbootfeatures.controller;
+
 import com.alejandropadron.springbootfeatures.api.response.StringDto;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -10,7 +11,7 @@ import org.springframework.web.servlet.function.EntityResponse;
 public class MainController {
 
     @GetMapping("/hello")
-    public ResponseEntity<StringDto> returnOKNoContent(){
+    public ResponseEntity<StringDto> returnOKNoContent() {
         return new ResponseEntity<StringDto>(StringDto.builder().message("Hello").build(), HttpStatus.OK);
     }
 }

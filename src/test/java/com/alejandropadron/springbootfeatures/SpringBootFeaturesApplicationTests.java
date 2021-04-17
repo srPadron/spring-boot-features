@@ -15,6 +15,7 @@ class SpringBootFeaturesApplicationTests {
 
 	@Test
 	void contextLoads() {
+
 		assertTrue(applicationContext.containsBean("mainController"));
 	}
 }
